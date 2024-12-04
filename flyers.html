@@ -39,29 +39,136 @@
             <h3 class="section-subtitle">Examples</h3>
 
             <!-- Start of 2x2 Grid -->
-            <div class="project-list-x3">
-                <div class="project-item-x3">
-                    <a href="project1.html">
-                        <img src="Images/caroline_kunshek_PSU_poster_2025_PostSecondary (1)_page-0001.jpg" alt="Project 1 Image 1">
-                        <h3>Scholarship Flyer</h3>
-                        <p>This flyer was designed to submit for the Print and Graphics Foundation Scholarship Flyer Contest. The general page layout was formatted using Adobe InDesign, with the brain image designed using image trace and brush effects in Adobe Illustrator.</p>
-                    </a>
-                </div>
-                <div class="project-item-x3">
-                    <a href="project2.html">
-                        <img src="Images/GoPittFest Flyer mockup.jpg" alt="Project 1 Image 2">
-                        <h3>GoPitt! Fest Flyer</h3>
-                        <p>With general layout completed using InDesign, I created this poster to promote a campus event. With these images, I used Photoshop to ensiure that they were the correct size and color mode for the printer.</p>
-                    </a>
-                </div>
-                <div class="project-item-x3">
-                    <a href="project3.html">
-                        <img src="Images/SpillTheTea_poster.jpg" alt="Project 1 Image 3">
-                        <h3>Spill the Tea Flyer</h3>
-                        <p>This flyer was an advertisement for an event that I coordinated through my college's graphics honors society chapter. I used Illustrator to create the teacup and word bubble, then formatted the images and created my type with InDesign.</p>
-                    </a>
-                </div>
-            </div>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project List</title>
+    <style>
+        /* Lightbox Overlay */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* Lightbox Image */
+        .lightbox-overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        /* Close Button */
+        .lightbox-overlay .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .project-list-x3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-item-x3 {
+            width: 30%;
+            text-align: center;
+        }
+
+        .project-item-x3 img {
+            max-width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .project-item-x3 h3 {
+            margin: 10px 0 5px;
+        }
+
+        .project-item-x3 p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-list-x3">
+        <div class="project-item-x3">
+            <a href="#" class="lightbox-trigger" data-fullsize="Images/caroline_kunshek_PSU_poster_2025_PostSecondary (1)_page-0001.jpg">
+                <img src="Images/caroline_kunshek_PSU_poster_2025_PostSecondary (1)_page-0001.jpg" alt="Project 1 Image 1">
+            </a>
+            <h3>Scholarship Flyer</h3>
+            <p>This flyer was designed to submit for the Print and Graphics Foundation Scholarship Flyer Contest. The general page layout was formatted using Adobe InDesign, with the brain image designed using image trace and brush effects in Adobe Illustrator.</p>
+        </div>
+        <div class="project-item-x3">
+            <a href="#" class="lightbox-trigger" data-fullsize="Images/GoPittFest Flyer mockup.jpg">
+                <img src="Images/GoPittFest Flyer mockup.jpg" alt="Project 1 Image 2">
+            </a>
+            <h3>GoPitt! Fest Flyer</h3>
+            <p>With general layout completed using InDesign, I created this poster to promote a campus event. With these images, I used Photoshop to ensure that they were the correct size and color mode for the printer.</p>
+        </div>
+        <div class="project-item-x3">
+            <a href="#" class="lightbox-trigger" data-fullsize="Images/SpillTheTea_poster.jpg">
+                <img src="Images/SpillTheTea_poster.jpg" alt="Project 1 Image 3">
+            </a>
+            <h3>Spill the Tea Flyer</h3>
+            <p>This flyer was an advertisement for an event that I coordinated through my college's graphics honors society chapter. I used Illustrator to create the teacup and word bubble, then formatted the images and created my type with InDesign.</p>
+        </div>
+    </div>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay">
+        <span class="close-lightbox">&times;</span>
+        <img src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const triggers = document.querySelectorAll(".lightbox-trigger");
+            const overlay = document.querySelector(".lightbox-overlay");
+            const overlayImg = overlay.querySelector("img");
+            const closeBtn = overlay.querySelector(".close-lightbox");
+
+            // Open Lightbox
+            triggers.forEach(trigger => {
+                trigger.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const imgSrc = trigger.getAttribute("data-fullsize");
+                    overlayImg.src = imgSrc;
+                    overlay.style.display = "flex";
+                });
+            });
+
+            // Close Lightbox
+            closeBtn.addEventListener("click", () => {
+                overlay.style.display = "none";
+            });
+
+            overlay.addEventListener("click", (e) => {
+                if (e.target === overlay || e.target === closeBtn) {
+                    overlay.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
             <!-- End of 2x2 Grid -->
             <section>
                 <h3 class="section-subtitle">Detailed Description</h3>
