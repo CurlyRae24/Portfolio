@@ -53,7 +53,7 @@ nav ul li a:hover {
 
 /* Hero section */
 #hero {
-    background: linear-gradient(to bottom, #ff6b8a, #ffb3c6);
+    background: linear-gradient(to bottom, #5fec68, #ffb3c6);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -313,26 +313,37 @@ form button:hover {
 /* Styling for each project item */
 .project-list-x3 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-    gap: 20px; /* Space between images */
-    margin: 0 auto; /* Center the grid */
-    width: 100%; /* Full width of container */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 images per row */
+    gap: 20px;
+    /* Space between images */
+    margin: 0 auto;
+    /* Center the grid */
+    width: 100%;
+    /* Full width of container */
 }
 
 /* Styling for each project item */
 .project-list-x3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row for better fit */
-    gap: 20px; /* Space between images */
-    margin: 0 auto; /* Center the grid */
-    width: 100%; /* Full width of container */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 images per row for better fit */
+    gap: 20px;
+    /* Space between images */
+    margin: 0 auto;
+    /* Center the grid */
+    width: 100%;
+    /* Full width of container */
 }
 
 /* Styling for each project item */
 .project-item-x3 {
-    background-color: transparent; /* Removed background color */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: none; /* Removed box-shadow */
+    background-color: transparent;
+    /* Removed background color */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: none;
+    /* Removed box-shadow */
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
@@ -341,10 +352,14 @@ form button:hover {
 /* Ensure images are significantly larger */
 .project-item-x3 img {
     display: block;
-    width: 100%; /* Image takes up full container width */
-    height: 400px; /* Significantly larger height */
-    object-fit: cover; /* Maintain image aspect ratio without distortion */
-    border-radius: 8px; /* Optional: Rounded corners for images */
+    width: 100%;
+    /* Image takes up full container width */
+    height: 400px;
+    /* Significantly larger height */
+    object-fit: cover;
+    /* Maintain image aspect ratio without distortion */
+    border-radius: 8px;
+    /* Optional: Rounded corners for images */
 }
 
 
@@ -416,6 +431,7 @@ form button:hover {
     color: white;
     cursor: pointer;
 }
+
 /* Caption Styling */
 .lightbox-overlay .caption {
     margin-top: 10px;
