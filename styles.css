@@ -193,7 +193,7 @@ nav ul li a:hover {
 #contact-text {
     color: #000000;
     font-family: 'oswald', sans-serif;
-    font-size: xx-large;
+    font-size: xx-large ;
     display: flex;
     flex-direction: column;
     /* Arrange content vertically */
