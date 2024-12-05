@@ -79,6 +79,28 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
+
+#about {
+    display: flex;
+    flex-direction: column;
+    /* Arrange content vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    height: auto;
+    /* Full viewport height */
+    text-align: center;
+    /* Center-align text */
+    margin: 0;
+    /* Reset margins */
+    padding-left: 200px;
+    padding-right: 200px;
+    color: #000000;
+    background-color: rgb(184, 231, 211);
+}
+
+
 /* Project page styles - 2x2 grid */
 #project-details .project-image-grid {
     display: grid;
@@ -165,6 +187,26 @@ nav ul li a:hover {
     padding: 10px;
     font-family: 'Oswald', sans-serif;
     /* Use Oswald font for project titles */
+}
+
+
+#contact-text {
+    color: #000000;
+    font-family: 'oswald', sans-serif;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    /* Arrange content vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    height: auto;
+    /* Full viewport height */
+    text-align: center;
+    /* Center-align text */
+    margin: 0;
+    /* Reset margins */
 }
 
 /* Contact form */
