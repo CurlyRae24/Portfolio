@@ -59,12 +59,27 @@ nav ul li a:hover {
     padding: 100px 20px;
 }
 
+
 .hero-image {
     max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+.hero-image-2 {
+    max-width: auto !important;
+    height: 250px !important;
+   
+    margin: 0 auto;
+}
+
+.elfsight-app-be87be1a-c17b-4be8-bb38-3a1b42ff51e4 {
+    max-width: 350px !important;
+    height: 250px !important;
+   padding-bottom: 80px;
+    margin:  auto;
+
 }
 
 #hero h1 {
@@ -99,6 +114,7 @@ nav ul li a:hover {
     color: #000000;
     background-color: rgb(184, 231, 211);
 }
+
 
 
 /* Project page styles - 2x2 grid */
@@ -137,6 +153,42 @@ nav ul li a:hover {
     /* Dark lavender for heading */
     margin-bottom: 20px;
 }
+
+.single-image {
+    display: flex; /* Centers the image horizontally */
+    justify-content: center; /* Ensures the image stays centered */
+    align-items: center; /* Centers the image vertically */
+    height: 100%; /* Ensures the container fills its parent */
+    width: 100%; /* Ensures the container fills its parent */
+    overflow: hidden; /* Hides any overflow if necessary */
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.single-image img {
+    width: 100%; /* Makes the image span the full width of the container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+
+.adobe-color {
+    display: flex; /* Centers the image horizontally and vertically */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 750px; /* Ensures the container takes up the full height of its parent */
+    width: 100%; /* Ensures the container takes up the full width of its parent */
+    overflow: hidden; /* Prevents the image from overflowing the container */
+}
+
+.adobe-color img {
+    max-width: 120%; /* Shrinks the image to 60% of the container's width */
+    height: auto; /* Keeps the image's aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the container without cropping */
+    transform: scale(0.6); /* Further scales the image to 60% of its original size */
+    transform-origin: center; /* Ensures the image stays centered when scaled */
+}
+
+
 
 /* 4 per row grid!!*/
 .project-list {
@@ -248,6 +300,10 @@ form button {
 form button:hover {
     background-color: #ff4081;
 }
+
+
+
+
 
 /* General Typography Improvements */
 .section-title {
