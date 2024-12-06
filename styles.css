@@ -74,6 +74,8 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+
+
 .elfsight-app-be87be1a-c17b-4be8-bb38-3a1b42ff51e4 {
     max-width: 350px !important;
     height: 250px !important;
@@ -94,6 +96,59 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
+#dollys {
+    max-width: 300px !important;
+    height: 200px !important;
+   align-items: center;
+    margin: 0 auto;
+   
+}
+
+#dollys h1 {
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    /* Use Oswald font for hero header */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#dollys p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+#dollys {
+    text-align: center; /* Centers the content within the container */
+    margin: 20px; /* Adds spacing around the section */
+}
+
+.single-image {
+    display: flex;
+    flex-direction: column; /* Ensures items stack vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+.image-container {
+    margin-bottom: 20px; /* Adds spacing between the image and text */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.text-container h3 {
+    margin: 10px 0; /* Adjusts spacing above and below the heading */
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.text-container p {
+    font-size: 16px; /* Adjust text size */
+    line-height: 1.5; /* Improves readability */
+    margin: 0 10px; /* Adds horizontal padding */
+}
 
 #about{
     display: flex;
