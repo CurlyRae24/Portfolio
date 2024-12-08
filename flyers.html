@@ -29,10 +29,10 @@
     </header>
 
     <section id="hero">
-        <img src="images/Magazine Ad Mockup Edited.jpg" alt="Sunflower Project Hero Image" class="hero-image">
-        <h1>Flyers</h1>
-        <p> With these projects, I primarily used InDesign to create aestethetically pleasing formats, putting page layout skills into practice.</p>
-    
+        <img src="images/Magazine Ad Mockup Edited.jpg" alt="Sunflower Project Hero Image" class="hero-image-2">
+        <h1>Advertisements</h1>
+        <p>2024</p>
+
     </section>
 
     <section id="project-details">
@@ -41,166 +41,177 @@
             <h3 class="section-subtitle">Examples</h3>
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project List</title>
-    <style>
-        /* Lightbox Overlay */
-        .lightbox-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        /* Lightbox Image */
-        .lightbox-overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border: 5px solid white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-        }
-
-        /* Close Button */
-        .lightbox-overlay .close-lightbox {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-        }
-
-        .project-list-x3 {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .project-item-x3 {
-            width: 30%;
-            text-align: center;
-        }
-
-        .project-item-x3 img {
-            max-width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .project-item-x3 h3 {
-            margin: 10px 0 5px;
-        }
-
-        .project-item-x3 p {
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="project-list-x3">
-        <div class="project-item-x3">
-            <a href="#" class="lightbox-trigger" data-fullsize="Images/Flyer-Scholarship.jpg">
-                <img src="Images/Flyer-Scholarship.jpg" alt="Project 1 Image 1">
-            </a>
-            <h3>Scholarship Flyer</h3>
-            <p>This flyer was designed to submit for the Print and Graphics Foundation Scholarship Flyer Contest. The general page layout was formatted using Adobe InDesign, with the brain image designed using image trace and brush effects in Adobe Illustrator.</p>
-        </div>
-        <div class="project-item-x3">
-            <a href="#" class="lightbox-trigger" data-fullsize="Images/Flyer-GoPittFest.jpg">
-                <img src="Images/Flyer-GoPittFest.jpg" alt="Project 1 Image 2">
-            </a>
-            <h3>GoPitt! Fest Flyer</h3>
-            <p>With general layout completed using InDesign, I created this poster to promote a campus event. With these images, I used Photoshop to ensure that they were the correct size and color mode for the printer.</p>
-        </div>
-        <div class="project-item-x3">
-            <a href="#" class="lightbox-trigger" data-fullsize="Images/Flyer-SpillTheTea.jpg">
-                <img src="Images/Flyer-SpillTheTea.jpg" alt="Project 1 Image 3">
-            </a>
-            <h3>Spill the Tea Flyer</h3>
-            <p>This flyer was an advertisement for an event that I coordinated through my college's graphics honors society chapter. I used Illustrator to create the teacup and word bubble, then formatted the images and created my type with InDesign.</p>
-        </div>
-    </div>
-   
-    <div id="dollys">
-        <div class="single-image">
-          <div class="image-container">
-            <a href="#" class="lightbox-trigger" data-fullsize="Images/Magazine Ad Mockup Edited.jpg">
-              <img src="Images/Magazine Ad Mockup Edited.jpg" alt="Project 1 Image 3">
-            </a>
-          </div>
-          <div class="text-container">
-            <h3 id="dollys-h1">Dolly's Flower Shoppe</h3>
-            <p id="dollys-p">Dolly's Flower Shoppe is a fictional brand which I created a business card or an advertisement. The sizing is designed to fit well inside of a magazine.</p>
-          </div>
-        </div>
-      </div>
-
-    <!-- Lightbox Overlay -->
-    <div class="lightbox-overlay">
-        <span class="close-lightbox">&times;</span>
-        <img src="" alt="Enlarged Image">
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const triggers = document.querySelectorAll(".lightbox-trigger");
-            const overlay = document.querySelector(".lightbox-overlay");
-            const overlayImg = overlay.querySelector("img");
-            const closeBtn = overlay.querySelector(".close-lightbox");
-
-            // Open Lightbox
-            triggers.forEach(trigger => {
-                trigger.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const imgSrc = trigger.getAttribute("data-fullsize");
-                    overlayImg.src = imgSrc;
-                    overlay.style.display = "flex";
-                });
-            });
-
-            // Close Lightbox
-            closeBtn.addEventListener("click", () => {
-                overlay.style.display = "none";
-            });
-
-            overlay.addEventListener("click", (e) => {
-                if (e.target === overlay || e.target === closeBtn) {
-                    overlay.style.display = "none";
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Project List</title>
+            <style>
+                /* Lightbox Overlay */
+                .lightbox-overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
                 }
-            });
-        });
-    </script>
-</body>
+
+                /* Lightbox Image */
+                .lightbox-overlay img {
+                    max-width: 90%;
+                    max-height: 90%;
+                    border: 5px solid white;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                    border-radius: 10px;
+                }
+
+                /* Close Button */
+                .lightbox-overlay .close-lightbox {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 30px;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                .project-list-x3 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+
+                .project-item-x3 {
+                    width: 30%;
+                    text-align: center;
+                }
+
+                .project-item-x3 img {
+                    max-width: 100%;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .project-item-x3 h3 {
+                    margin: 10px 0 5px;
+                }
+
+                .project-item-x3 p {
+                    font-size: 14px;
+                    color: #666;
+                }
+            </style>
+            </head>
+
+            <body>
+                <div class="project-list-x3">
+                    <div class="project-item-x3">
+                        <a href="#" class="lightbox-trigger" data-fullsize="Images/Flyer-Scholarship.jpg">
+                            <img src="Images/Flyer-Scholarship.jpg" alt="Project 1 Image 1">
+                        </a>
+                        <h3>Scholarship Flyer</h3>
+                        <p>This flyer was designed to submit for the Print and Graphics Foundation Scholarship Flyer
+                            Contest. The general page layout was formatted using Adobe InDesign, with the brain image
+                            designed using image trace and brush effects in Adobe Illustrator.</p>
+                    </div>
+                    <div class="project-item-x3">
+                        <a href="#" class="lightbox-trigger" data-fullsize="Images/Flyer-GoPittFest.jpg">
+                            <img src="Images/Flyer-GoPittFest.jpg" alt="Project 1 Image 2">
+                        </a>
+                        <h3>GoPitt! Fest Flyer</h3>
+                        <p>With general layout completed using InDesign, I created this poster to promote a campus
+                            event. With these images, I used Photoshop to ensure that they were the correct size and
+                            color mode for the printer.</p>
+                    </div>
+                    <div class="project-item-x3">
+                        <a href="#" class="lightbox-trigger" data-fullsize="Images/Flyer-SpillTheTea.jpg">
+                            <img src="Images/Flyer-SpillTheTea.jpg" alt="Project 1 Image 3">
+                        </a>
+                        <h3>Spill the Tea Flyer</h3>
+                        <p>This flyer was an advertisement for an event that I coordinated through my college's graphics
+                            honors society chapter. I used Illustrator to create the teacup and word bubble, then
+                            formatted the images and created my type with InDesign.</p>
+                    </div>
+                </div>
+
+                <div id="dollys">
+                    <div class="single-image">
+                        <div class="image-container">
+                            <a href="#" class="lightbox-trigger" data-fullsize="Images/Magazine Ad Mockup Edited.jpg">
+                                <img src="Images/Magazine Ad Mockup Edited.jpg" alt="Project 1 Image 3">
+                            </a>
+                        </div>
+                        <div class="text-container">
+                            <h3 id="dollys-h1">Dolly's Flower Shoppe</h3>
+                            <p id="dollys-p">Dolly's Flower Shoppe is a fictional brand which I created a business card
+                                or an advertisement. The sizing is designed to fit well inside of a magazine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lightbox Overlay -->
+                <div class="lightbox-overlay">
+                    <span class="close-lightbox">&times;</span>
+                    <img src="" alt="Enlarged Image">
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const triggers = document.querySelectorAll(".lightbox-trigger");
+                        const overlay = document.querySelector(".lightbox-overlay");
+                        const overlayImg = overlay.querySelector("img");
+                        const closeBtn = overlay.querySelector(".close-lightbox");
+
+                        // Open Lightbox
+                        triggers.forEach(trigger => {
+                            trigger.addEventListener("click", (e) => {
+                                e.preventDefault();
+                                const imgSrc = trigger.getAttribute("data-fullsize");
+                                overlayImg.src = imgSrc;
+                                overlay.style.display = "flex";
+                            });
+                        });
+
+                        // Close Lightbox
+                        closeBtn.addEventListener("click", () => {
+                            overlay.style.display = "none";
+                        });
+
+                        overlay.addEventListener("click", (e) => {
+                            if (e.target === overlay || e.target === closeBtn) {
+                                overlay.style.display = "none";
+                            }
+                        });
+                    });
+                </script>
+            </body>
+
 </html>
 
-            <!-- End of 2x2 Grid -->
-            <section>
-                <h3 class="section-subtitle">Detailed Description</h3>
-                <p class="section-text">These flyers required background knowledge, including the ability to adjust images to the necessary PPI and color modes for either print or digital use, along with the ability to correctly format images to bleed marks and margins in order to be viable for print.</p>
+<!-- End of 2x2 Grid -->
+<section>
+    <h3 class="section-subtitle">Detailed Description</h3>
+    <p class="section-text">These flyers required background knowledge, including the ability to adjust images to the
+        necessary PPI and color modes for either print or digital use, along with the ability to correctly format images
+        to bleed marks and margins in order to be viable for print.</p>
 
-                <h3 class="section-subtitle">Technologies Used:</h3>
-                <ul class="tech-list">
-                    <li>Adobe InDesign</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-            
-                </ul>
-            </section>
-        </div>
-    </section>
+    <h3 class="section-subtitle">Technologies Used:</h3>
+    <ul class="tech-list">
+        <li>Adobe InDesign</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe Photoshop</li>
 
-    <footer>
-        <p class="footer-text">&copy; 2024 Caroline Kunshek. All Rights Reserved.</p>
-    </footer>
+    </ul>
+</section>
+</div>
+</section>
+
+<footer>
+    <p class="footer-text">&copy; 2024 Caroline Kunshek. All Rights Reserved.</p>
+</footer>
 </body>
 
 </html>

@@ -53,23 +53,23 @@ nav ul li a:hover {
 
 /* Hero section */
 #hero {
-    background: linear-gradient(to bottom, #ff6b8a, #ffb3c6);
-    color: white;
+    background: black;
     text-align: center;
     padding: 100px 20px;
 }
 
 .hero-image {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
 }
+
 .hero-image-2 {
     max-width: auto !important;
     height: 250px !important;
-   
+
     margin: 0 auto;
 }
 
@@ -78,8 +78,8 @@ nav ul li a:hover {
 .elfsight-app-be87be1a-c17b-4be8-bb38-3a1b42ff51e4 {
     max-width: 350px !important;
     height: 250px !important;
-   padding-bottom: 80px;
-    margin:  auto;
+    padding-bottom: 80px;
+    margin: auto;
 
 }
 
@@ -96,11 +96,19 @@ nav ul li a:hover {
 }
 
 #dollys {
-    max-width: 300px !important;
-    height: 200px !important;
-   align-items: center;
-    margin: 0 auto;
-   
+    text-align: center;
+    /* Centers the content */
+    margin: 20px;
+    /* Adds spacing around the section */
+}
+
+#dollys img {
+    max-width: 100%;
+    /* Ensures the image does not exceed the container's width */
+    width: 400px;
+    /* Sets a smaller width */
+    height: auto;
+    /* Maintains the aspect ratio */
 }
 
 #dollys h1 {
@@ -117,39 +125,47 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#dollys {
-    text-align: center; /* Centers the content within the container */
-    margin: 20px; /* Adds spacing around the section */
-}
+
 
 .single-image {
     display: flex;
-    flex-direction: column; /* Ensures items stack vertically */
-    align-items: center; /* Centers content horizontally */
+    flex-direction: column;
+    /* Ensures items stack vertically */
+    align-items: center;
+    /* Centers content horizontally */
 }
 
 .image-container {
-    margin-bottom: 20px; /* Adds spacing between the image and text */
+    margin-bottom: 20px;
+    /* Adds spacing between the image and text */
 }
 
 .image-container img {
-    max-width: 100%; /* Ensures image is responsive */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    max-width: 100%;
+    /* Ensures image is responsive */
+    height: auto;
+    /* Maintains aspect ratio */
+    border-radius: 10px;
+    /* Optional: Adds rounded corners */
 }
 
 .text-container h3 {
-    margin: 10px 0; /* Adjusts spacing above and below the heading */
-    font-size: 24px; /* Adjust the size as needed */
+    margin: 10px 0;
+    /* Adjusts spacing above and below the heading */
+    font-size: 24px;
+    /* Adjust the size as needed */
 }
 
 .text-container p {
-    font-size: 16px; /* Adjust text size */
-    line-height: 1.5; /* Improves readability */
-    margin: 0 10px; /* Adds horizontal padding */
+    font-size: 16px;
+    /* Adjust text size */
+    line-height: 1.5;
+    /* Improves readability */
+    margin: 0 10px;
+    /* Adds horizontal padding */
 }
 
-#about{
+#about {
     display: flex;
     flex-direction: column;
     /* Arrange content vertically */
@@ -203,43 +219,62 @@ nav ul li a:hover {
     font-family: 'Oswald', sans-serif;
     /* Use Oswald font for section headers */
     font-size: 2rem;
-    color: #7b5aa5;
+    color: #000000;
     /* Dark lavender for heading */
     margin-bottom: 20px;
 }
 
 .single-image {
-    display: flex; /* Centers the image horizontally */
-    justify-content: center; /* Ensures the image stays centered */
-    align-items: center; /* Centers the image vertically */
-    height: 100%; /* Ensures the container fills its parent */
-    width: 100%; /* Ensures the container fills its parent */
-    overflow: hidden; /* Hides any overflow if necessary */
+    display: flex;
+    /* Centers the image horizontally */
+    justify-content: center;
+    /* Ensures the image stays centered */
+    align-items: center;
+    /* Centers the image vertically */
+    height: 100%;
+    /* Ensures the container fills its parent */
+    width: 100%;
+    /* Ensures the container fills its parent */
+    overflow: hidden;
+    /* Hides any overflow if necessary */
     padding-top: 10px;
     padding-bottom: 30px;
 }
 
 .single-image img {
-    width: 100%; /* Makes the image span the full width of the container */
-    height: auto; /* Maintains the image's aspect ratio */
+    width: 100%;
+    /* Makes the image span the full width of the container */
+    height: auto;
+    /* Maintains the image's aspect ratio */
 }
 
 
 .adobe-color {
-    display: flex; /* Centers the image horizontally and vertically */
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-    height: 750px; /* Ensures the container takes up the full height of its parent */
-    width: 100%; /* Ensures the container takes up the full width of its parent */
-    overflow: hidden; /* Prevents the image from overflowing the container */
+    display: flex;
+    /* Centers the image horizontally and vertically */
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+    height: 750px;
+    /* Ensures the container takes up the full height of its parent */
+    width: 100%;
+    /* Ensures the container takes up the full width of its parent */
+    overflow: hidden;
+    /* Prevents the image from overflowing the container */
 }
 
 .adobe-color img {
-    max-width: 120%; /* Shrinks the image to 60% of the container's width */
-    height: auto; /* Keeps the image's aspect ratio */
-    object-fit: contain; /* Ensures the image fits within the container without cropping */
-    transform: scale(0.6); /* Further scales the image to 60% of its original size */
-    transform-origin: center; /* Ensures the image stays centered when scaled */
+    max-width: 120%;
+    /* Shrinks the image to 60% of the container's width */
+    height: auto;
+    /* Keeps the image's aspect ratio */
+    object-fit: contain;
+    /* Ensures the image fits within the container without cropping */
+    transform: scale(0.6);
+    /* Further scales the image to 60% of its original size */
+    transform-origin: center;
+    /* Ensures the image stays centered when scaled */
 }
 
 
@@ -259,13 +294,13 @@ nav ul li a:hover {
 .project-item {
     background-color: #ffffff;
     /* White background for each item */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
     /* Shadow for depth */
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
-    background-color: #ff6b8a;
+    background-color: #000000;
     /* Frame color */
 }
 
@@ -274,11 +309,11 @@ nav ul li a:hover {
     display: block;
     width: 100%;
     /* Full width of the container */
-    height: 200px;
+
     /* Fixed height for all images */
     object-fit: cover;
     /* Ensure images cover the container without distortion */
-    border-bottom: 4px solid #ffb3c6;
+    border-bottom: 100% solid #000000;
     /* Bottom border for styling */
 }
 
@@ -287,7 +322,7 @@ nav ul li a:hover {
 .project-item h3 {
     margin: 0;
     font-size: 1.2rem;
-    background-color: #ffb3c6;
+    background-color: #000000;
     /* Title background color */
     color: white;
     padding: 10px;
@@ -299,7 +334,7 @@ nav ul li a:hover {
 #contact-text {
     color: #000000;
     font-family: 'oswald', sans-serif;
-    font-size: xx-large ;
+    font-size: xx-large;
     display: flex;
     flex-direction: column;
     /* Arrange content vertically */
