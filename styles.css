@@ -53,13 +53,13 @@ nav ul li a:hover {
 
 /* Hero section */
 #hero {
-    background: black;
+    background: rgb(255, 243, 228);
     text-align: center;
     padding: 100px 20px;
 }
 
 .hero-image {
-    max-width: 40%;
+    max-width: 25%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -165,25 +165,93 @@ nav ul li a:hover {
     /* Adds horizontal padding */
 }
 
+/* Entire Section Styling */
 #about {
-    display: flex;
-    flex-direction: column;
-    /* Arrange content vertically */
-    align-items: center;
-    /* Center horizontally */
-    justify-content: center;
-    /* Center vertically */
-    height: auto;
-    /* Full viewport height */
-    text-align: center;
-    /* Center-align text */
-    margin: 0;
-    /* Reset margins */
-    padding-left: 200px;
-    padding-right: 200px;
+    margin: 0 auto;
+    padding: 50px 100px; /* Padding on all sides */
     color: #000000;
-    background-color: rgb(184, 231, 211);
+    background-color: rgb(240, 223, 223);
+    max-width: 1200px; /* Center the section with a max width */
 }
+
+/* Center the Heading */
+#about {
+    margin: 0 auto;
+    padding: 50px 100px; /* Padding on all sides */
+    color: #000000;
+    background-color: rgb(240, 223, 223);
+    max-width: 1200px; /* Center the section with a max width */
+}
+
+/* Header Container Styling */
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Space between header and content */
+}
+
+/* Header Styling */
+#about {
+    margin: 0 auto;
+    padding: 50px 100px; /* Padding on all sides */
+    color: #000000;
+    background-color: rgb(240, 223, 223);
+    max-width: 1200px; /* Center the section with a max width */
+}
+
+/* Header Container Styling */
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Space between header and content */
+}
+
+/* Header Styling */
+#about {
+    margin: 0 auto;
+    padding: 50px 100px; /* Padding on all sides */
+    color: #000000;
+    background-color: #EEE2DE;
+    max-width: 1200px; /* Center the section with a max width */
+}
+
+/* Flexbox Container for Text and Image */
+.content {
+    display: flex;
+    flex-direction: row; /* Arrange text and image horizontally */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Add spacing between text and image */
+}
+
+/* Text Content Styling */
+.text-content {
+    flex: 1; /* Take up half the space */
+    max-width: 50%; /* Ensure the text does not exceed half the width */
+    text-align: left; /* Align text to the left */
+}
+
+/* Center the Header */
+.text-content h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Space between header and paragraph */
+}
+
+/* Text Paragraph Styling */
+.text-content p {
+    margin: 0;
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Image Styling - Adjusted for smaller size */
+.content img {
+    flex: 1; /* Take up half the space */
+    max-width: 40%; /* Reduce the image size by decreasing max-width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+
 
 
 
@@ -210,7 +278,7 @@ nav ul li a:hover {
     /* Soft lavender background */
     border-radius: 12px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px EEBDB9;
     /* Adds depth */
 }
 
@@ -281,56 +349,63 @@ nav ul li a:hover {
 
 
 
-/* 4 per row grid!!*/
+/* 4 per row grid */
+/* 3 per row grid */
+/* 3 per row grid */
+/* 3 per row grid */
 .project-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Max 4 images per row */
-    gap: 20px;
-    /* Space between images */
-    margin: 0 auto;
-    /* Center the grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 25px; /* Gap between items */
+    margin: 0 auto; /* Center the grid */
+    padding: 40px; /* Padding inside the container */
+    max-width: 1200px; /* Max width for the grid container */
+    background-color: #f4f4f4; /* Light grey background for the grid container */
+}
+
+/* Styling for each project item */
+/* Remove underline from links in the project items */
+.project-item a {
+    text-decoration: none; /* Remove underline from links */
 }
 
 /* Styling for each project item */
 .project-item {
-    background-color: #ffffff;
-    /* White background for each item */
-
-
-    /* Shadow for depth */
+    background-color: #ffffff; /* White background for each item */
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
-    background-color: #000000;
-    /* Frame color */
+    background-color: #D6EBD4; /* Frame color */
+    margin: 0 20px; /* Horizontal margin between items */
+    border-radius: 8px; /* Optional: Rounded corners for the items */
+    padding: 20px; /* Padding inside each project item */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Ensure images are consistent in size */
+/* Make images the same size and keep the aspect ratio */
 .project-item img {
     display: block;
-    width: 100%;
-    /* Full width of the container */
-
-    /* Fixed height for all images */
-    object-fit: cover;
-    /* Ensure images cover the container without distortion */
-    border-bottom: 100% solid #000000;
-    /* Bottom border for styling */
+    width: 100%; /* Make the image take up full width of the container */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    margin-bottom: 15px; /* Space between the image and the title */
+    border-bottom: none; /* Remove the border below the image */
 }
 
-
-
+/* Styling for project titles */
 .project-item h3 {
     margin: 0;
-    font-size: 1.2rem;
-    background-color: #000000;
-    /* Title background color */
-    color: white;
-    padding: 10px;
-    font-family: 'Oswald', sans-serif;
-    /* Use Oswald font for project titles */
+    font-size: 1.3rem; /* Font size for titles */
+    background-color: #D6EBD4; /* Title background color */
+    color: black; /* Change title text color to black */
+    padding: 12px;
+    font-family: 'Oswald', sans-serif; /* Use Oswald font for project titles */
 }
+
+
+
 
 
 #contact-text {
@@ -457,7 +532,7 @@ form button:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(240, 223, 223);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     /* Subtle shadow for elevation */
@@ -628,4 +703,20 @@ form button:hover {
     font-size: 18px;
     text-align: center;
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .text-content, .content img {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .content img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
