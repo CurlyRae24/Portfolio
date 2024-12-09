@@ -14,6 +14,9 @@ header {
     background-color: #262626;
     color: white;
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -28,11 +31,14 @@ nav {
 nav .logo {
     font-size: 28px;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -50,6 +56,22 @@ nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
 }
+
+/* Hero Section */
+#hero {
+    background: rgb(255, 243, 228);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-image {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
 
 /* Hero section */
 #hero {
@@ -360,7 +382,7 @@ nav ul li a:hover {
     margin: 0 auto; /* Center the grid */
     padding: 40px; /* Padding inside the container */
     max-width: 1200px; /* Max width for the grid container */
-    background-color: #f4f4f4; /* Light grey background for the grid container */
+    background-color: #d6e6f3; /* Green background for the grid container */
 }
 
 /* Styling for each project item */
