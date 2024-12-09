@@ -1,11 +1,22 @@
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    alert('Thank you for your message!');
-    this.reset();
-});
-
 document.addEventListener("DOMContentLoaded", function () {
+    // Contact form submission handler
+    const contactForm = document.getElementById('contact-form');
+    if (!contactForm) {
+        console.error("Contact form not found!");
+    } else {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+            this.reset();
+        });
+    }
+
+    // Lightbox functionality
     const triggers = document.querySelectorAll(".lightbox-trigger");
+    if (triggers.length === 0) {
+        console.warn("No lightbox triggers found!");
+    }
+
     const overlay = document.createElement("div");
     overlay.className = "lightbox-overlay";
     overlay.innerHTML = `
@@ -37,5 +48,20 @@ document.addEventListener("DOMContentLoaded", function () {
             overlay.style.display = "none";
         }
     });
-});
 
+    // Scroll to about section and trigger animation
+    const aboutLink = document.querySelector('a[href="#about"]');
+    const aboutSection = document.querySelector('#about');
+
+    if (aboutLink && aboutSection) {
+        aboutLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Add the 'animate' class to trigger the animation
+            setTimeout(function() {
+                aboutSection.classList.add('animate');
+            }, 300); // Small delay to make sure the scroll happens before animation starts
+        });
+    }
+});

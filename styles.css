@@ -58,64 +58,68 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-#hero {
-    background: rgb(255, 243, 228);
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero-image {
-    max-width: 25%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-
 /* Hero section */
 #hero {
     background: rgb(255, 243, 228);
     text-align: center;
     padding: 100px 20px;
-}
-
-.hero-image {
-    max-width: 25%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.hero-image-2 {
-    max-width: auto !important;
-    height: 250px !important;
-
-    margin: 0 auto;
-}
-
-
-
-.elfsight-app-be87be1a-c17b-4be8-bb38-3a1b42ff51e4 {
-    max-width: 350px !important;
-    height: 250px !important;
-    padding-bottom: 80px;
-    margin: auto;
-
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+    animation: fadeIn 1.5s ease-out forwards; /* Apply fade-in animation */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+ 
 }
 
 #hero h1 {
     font-size: 2.5rem;
     font-family: 'Oswald', sans-serif;
-    /* Use Oswald font for hero header */
-    margin-bottom: 10px;
+    margin: 0; /* Remove bottom margin to bring it closer to the paragraph */
+    opacity: 0; /* Start with opacity 0 */
+    animation: slideUp 1s ease-out forwards; /* Apply sliding animation */
+    animation-delay: 0.3s; /* Delay text slide-in */
+   padding-right: 15px;
 }
 
 #hero p {
     font-size: 1.2rem;
     font-weight: 300;
+    opacity: 0; /* Start with opacity 0 */
+    animation: slideUp 1s ease-out forwards; /* Apply sliding animation */
+    animation-delay: 0.5s; /* Delay paragraph slide-in */
+    margin-top: 10px; /* Add a little space between the header and paragraph */
+    max-width: 80%; /* Restrict paragraph width for better readability */
 }
+
+
+.elfsight-app-be87be1a-c17b-4be8-bb38-3a1b42ff51e4 {
+    max-width: 50%; /* Reduce the width of the Elfsight app */
+    height: auto; /* Keep the height proportional */
+    margin: 0 auto;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px); /* Start from below */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /* Slide up to original position */
+        opacity: 1;
+    }
+}
+
 
 #dollys {
     text-align: center;
@@ -197,45 +201,65 @@ nav ul li a:hover {
 }
 
 /* Center the Heading */
+/* About section */
 #about {
     margin: 0 auto;
-    padding: 50px 100px; /* Padding on all sides */
-    color: #000000;
-    background-color: rgb(240, 223, 223);
-    max-width: 1200px; /* Center the section with a max width */
-}
-
-/* Header Container Styling */
-.header-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px; /* Space between header and content */
-}
-
-/* Header Styling */
-#about {
-    margin: 0 auto;
-    padding: 50px 100px; /* Padding on all sides */
-    color: #000000;
-    background-color: rgb(240, 223, 223);
-    max-width: 1200px; /* Center the section with a max width */
-}
-
-/* Header Container Styling */
-.header-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px; /* Space between header and content */
-}
-
-/* Header Styling */
-#about {
-    margin: 0 auto;
-    padding: 50px 100px; /* Padding on all sides */
+    padding: 50px 100px;
     color: #000000;
     background-color: #EEE2DE;
-    max-width: 1200px; /* Center the section with a max width */
+    max-width: 1200px;
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+    animation: fadeInUp 1.5s ease-out forwards; /* Fade in with slide-up */
 }
+
+/* Header Container Styling */
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeInUp 1.5s ease-out 0.5s forwards; /* Delay header container animation */
+}
+
+/* Header Styling */
+#about h2 {
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeInUp 1s ease-out forwards; /* Fade and slide up animation */
+    animation-delay: 0.7s; /* Delay header animation */
+}
+
+/* Content Styling */
+#about p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeInUp 1.5s ease-out forwards; /* Fade and slide up animation */
+    animation-delay: 1s; /* Delay paragraph animation */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Slide up to normal position */
+    }
+}
+
+.hero-image-3 {  max-width: 60%; /* Adjust size here */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+    animation: fadeIn 1.5s ease-out 0.5s forwards;}
 
 /* Flexbox Container for Text and Image */
 .content {
@@ -430,63 +454,86 @@ nav ul li a:hover {
 
 
 
-#contact-text {
-    color: #000000;
-    font-family: 'oswald', sans-serif;
-    font-size: xx-large;
-    display: flex;
-    flex-direction: column;
-    /* Arrange content vertically */
-    align-items: center;
-    /* Center horizontally */
-    justify-content: center;
-    /* Center vertically */
-    height: auto;
-    /* Full viewport height */
-    text-align: center;
-    /* Center-align text */
-    margin: 0;
-    /* Reset margins */
-}
-
-/* Contact form */
+/* Contact Page Section */
 #contact {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #ffebeb, #ffecec); /* Soft gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
 }
 
+/* Contact Page Header */
+#contact-text {
+    color: #333333;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Contact Form Container */
 form {
-    max-width: 600px;
+    background: #ffffff; /* White card background */
+    padding: 40px;
+    border-radius: 10px;
+ 
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
 
+/* Form Labels */
 form label {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
+/* Form Inputs and Textarea */
 form input,
 form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
     border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    transition: border-color 0.3s, background 0.3s;
 }
 
+form input:focus,
+form textarea:focus {
+    border-color: #e40f3d; /* Highlight on focus */
+    background: #fff;
+    outline: none;
+}
+
+/* Form Button */
 form button {
-    background-color: #ff6b8a;
-    color: white;
-    padding: 10px 15px;
+    background-color: #e40f3d;
+    color: #ffffff;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
-    background-color: #ff4081;
+    background-color: #e40f3d;
+    transform: scale(1.05);
 }
 
 
@@ -540,14 +587,39 @@ form button:hover {
 }
 
 /* Footer Styling */
-.footer-text {
+footer {
+    background-color: #000000; /* Darker background for contrast */
+    color: #ecf0f1; /* Light color for text */
     font-family: 'Roboto', sans-serif;
-    font-size: 0.85rem;
-    color: #666;
-    /* Softer gray for footer */
+    text-align: center; /* Center align text */
+    padding: 1rem 0; /* Add padding for spacing */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Position relative for any potential adjustments */
+}
+
+.footer-text {
+    font-size: 0.9rem; /* Slightly larger font for readability */
+    color: #ecf0f1; /* Light color text for better contrast */
     margin: 0;
     padding: 0.5rem 0;
 }
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* Adjust font size for copyright notice */
+}
+
+footer a {
+    color: #ff6b8a; /* Accent color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover for interactivity */
+}
+
 
 /* Container for improved layout */
 .container {
