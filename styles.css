@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #262626;
+    background-color: #1e8b8d;
     color: white;
     padding: 20px 0;
     position: sticky;
@@ -60,7 +60,8 @@ nav ul li a:hover {
 /* Hero Section */
 /* Hero section */
 #hero {
-    background: rgb(255, 243, 228);
+    background: #bd202e;
+
     text-align: center;
     padding: 100px 20px;
     opacity: 0; /* Start with opacity 0 for fade-in effect */
@@ -73,13 +74,14 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: 'Oswald', sans-serif;
     margin: 0; /* Remove bottom margin to bring it closer to the paragraph */
     opacity: 0; /* Start with opacity 0 */
     animation: slideUp 1s ease-out forwards; /* Apply sliding animation */
     animation-delay: 0.3s; /* Delay text slide-in */
    padding-right: 15px;
+   color: rgb(255, 255, 255);
 }
 
 #hero p {
@@ -90,6 +92,7 @@ nav ul li a:hover {
     animation-delay: 0.5s; /* Delay paragraph slide-in */
     margin-top: 10px; /* Add a little space between the header and paragraph */
     max-width: 80%; /* Restrict paragraph width for better readability */
+    color: rgb(255, 255, 255);
 }
 
 
